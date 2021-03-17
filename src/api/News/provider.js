@@ -11,5 +11,5 @@ import { converter } from './converter';
 export const getNews = () => (
   fetch(REQUEST_URL)
     .then((response) => (response.json()))
-    .then((data) => console.log(data))
+    .then((data) => converter(data.artikles))
 )
