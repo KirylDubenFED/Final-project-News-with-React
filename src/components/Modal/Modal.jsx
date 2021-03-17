@@ -10,7 +10,7 @@ const Modal = ({ title, isOpen, onCancel, children }) => {
         <div className="modalWindow">
           <div className="modalHeader">
             <div className="modalTitle">{title}</div>
-            {/* <Ikon name="times" onClick={onCancel} /> */}
+            {/* <Ikon name="cross" onClick={onCancel} /> */}
           </div>
           <div className="modalBody">{children}</div>
           <div className="modalFooter">
