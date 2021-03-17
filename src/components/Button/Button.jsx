@@ -13,6 +13,7 @@ Button.propTypes = {
   ]),
   className: PropTypes.string,
 };
+
 Button.defaultProps = {
   children: 'Кнопыщщщщща',
   className: '',

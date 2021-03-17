@@ -32,7 +32,7 @@ Modal.propTypes = {
 Modal.defaultPros = {
   title: 'Заголовок',
   isOpen: false,
-  onCancel: () => {},
+  onCancel: () => { },
   children: null,
 };
 

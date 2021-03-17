@@ -1,14 +1,15 @@
 import { News } from "../../entities/news"
 
-export const converter = (artiklesFromServer) => {
-  return artiklesFromServer.map((article, index) =>
+export const converter = (resultsFromServer) => {
+  return resultsFromServer.map((result) =>
     new News({
-      id: index,
-      title: article.title,
-      description: article.description,
-      imageUrl: article.urlToImage,
-      author: article.author,
-      link: article.url,
+      id: result.id,
+      title: result.webTitle,
+      description: result.description,
+      imageUrl: result.urlToImage,
+      author: result.author,
+      link: result.webUrl,
+      releaseDate: result.webPublicationDate
     })
   );
 }

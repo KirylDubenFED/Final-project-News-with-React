@@ -4,19 +4,19 @@ import Search from '../Search/Search'
 import { getNews } from '../../api/News/provider';
 
 function App() {
-  const [articles, setArticles] = useState([]);
-  getNews().then(setArticles)
+  const [results, setResults] = useState([]);
+  getNews().then(setResults)
 
   return (
     <div className='App'>
       <ul>
       
         {
-          articles.map((article) => (
-            <li key={article.id}>;
-              <h3>{article.title}</h3>;
-              <a href={article.link}>Ссылка</a>;
-              <img src={article.imageUrl} alt={article.title}></img>;
+          results.map((result) => (
+            <li key={result.id}>;
+              <h3>{result.webTitle}</h3>;
+              <a href={result.webUrl}>Ссылка</a>;
+              <img src={result.imageUrl} alt={result.title}></img>;
             </li>
           ))
         }
