@@ -7,10 +7,11 @@ function App() {
   const [results, setResults] = useState([]);
   getNews().then(setResults)
 
+  // console.log(getNews)
   return (
     <div className='App'>
       <ul>
-      
+
         {
           results.map((result) => (
             <li key={result.id}>;
