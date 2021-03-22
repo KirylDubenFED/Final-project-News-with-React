@@ -9,7 +9,8 @@ export const converter = (resultsFromServer) => {
       imageUrl: result.urlToImage,
       author: result.author,
       link: result.webUrl,
-      releaseDate: result.webPublicationDate
+      category: result.sectionName,
+      releaseDate: result.webPublicationDate,
     })
   );
 }

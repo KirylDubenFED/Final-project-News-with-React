@@ -10,7 +10,7 @@
 // };
 
 export class News {
-  constructor( {id, title, description, image, author, url, category, webPublicationDate} ) {
+  constructor( {id, title, description, image, author, url, category, releaseDate} ) {
     this.id = id;
     this.title = title;
     this.description = description;
@@ -18,6 +18,6 @@ export class News {
     this.author = author;
     this.url = url;
     this.category = category;
-    this.releaseDate = webPublicationDate;
+    this.releaseDate = releaseDate;
     }
 };
