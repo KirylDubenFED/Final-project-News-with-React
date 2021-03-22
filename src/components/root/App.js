@@ -16,7 +16,8 @@ function App() {
             <li key={result.id}>;
               <h3>{result.webTitle}</h3>;
               <a href={result.webUrl}>Ссылка</a>;
-              <img src={result.imageUrl} alt={result.title}></img>;
+              {/* <img src={result.imageUrl} alt={result.title}></img>; */}
+              <data>{result.webPublicationDate}</data>
             </li>
           ))
         }
