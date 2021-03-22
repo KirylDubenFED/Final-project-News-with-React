@@ -13,9 +13,9 @@ function App() {
       <ul>
         {
           results.map((result) => (
-            <li key={result.id}>;
-              <h3>{result.webTitle}</h3>;
-              <a href={result.webUrl}>Ссылка</a>;
+            <li key={result.id}>
+              <h3>{result.webTitle}</h3>
+              <a href={result.webUrl}>Ссылка</a>
               {/* <img src={result.imageUrl} alt={result.title}></img>; */}
               <time>{result.webPublicationDate}</time>
             </li>

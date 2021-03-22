@@ -10,7 +10,7 @@ export const converter = (resultsFromServer) => {
       author: result.author,
       link: result.webUrl,
       category: result.sectionName,
-      releaseDate: result.releaseDate,
+      releaseDate: result.webPublicationDate,
     })
   );
 }
