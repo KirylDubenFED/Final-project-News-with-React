@@ -1,4 +1,4 @@
-import { News } from "../entities/news";
+import { News } from "../../entities/news";
 
 export const MOCK_NEWS = [
   new News({
