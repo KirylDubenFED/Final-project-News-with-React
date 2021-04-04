@@ -1,22 +1,27 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import styles from "./Button.module.scss";
 
-const Button = ({ children, className, onClick }) => (
-
-  <button type="button" className={`button ${className}`}>{children}</button>
+const Button = ({ children, onClick }) => (
+  <div className={styles.container}>
+    <button
+      type="button"
+      className={styles.button}
+      onClick={(e) => onClick && onClick(e)}
+    >
+      {children}
+    </button>
+  </div>
 );
 
 Button.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.element,
-  ]),
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   className: PropTypes.string,
 };
 
 Button.defaultProps = {
-  children: 'Кнопыщщщщща',
-  className: '',
+  children: "Search",
+  className: "",
 };
 
 export default Button;

@@ -1,8 +1,6 @@
-import { News } from "../../entities/news"
-
 export const converter = (resultsFromServer) => {
-  return resultsFromServer.map((result) =>
-    new News({
+  return resultsFromServer.map((result) => {
+    return {
       id: result.id,
       title: result.webTitle,
       description: result.description,
@@ -11,6 +9,6 @@ export const converter = (resultsFromServer) => {
       link: result.webUrl,
       category: result.sectionName,
       releaseDate: result.webPublicationDate,
-    })
-  );
-}
+    };
+  });
+};
