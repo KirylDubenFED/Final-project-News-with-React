@@ -26,8 +26,7 @@ function App() {
   return (
     <div className="App_wrapper">
       <h1 className="App_title">
-        Лучший поставщик непроверенных новостей в интернете
-      </h1>
+        Фейк на Фейке и Фейком погоняет)))<br></br> Ребята, прошу не обижаться))</h1>
       <div className="App_all-news">
         {results.map((result) => (
           <div
@@ -36,7 +35,7 @@ function App() {
             onClick={() => openNewsModal(result)}
           >
             <h3 className="App_news__title">
-              <a href={result.webUrl}>{result.title}</a>
+              <a href={result.url}>{result.title}</a>
             </h3>
 
             <div className="App_image-block">
@@ -56,7 +55,7 @@ function App() {
       </div>
       <Modal isOpen={modalIsOpen}>
         <News {...modalData}></News>
-        <Button onClick={() => closeNewsModal()}>Назад</Button>
+        <Button onClick={() => closeNewsModal()}>Закрыть</Button>
       </Modal>
     </div>
   );

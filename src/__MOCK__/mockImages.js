@@ -9,6 +9,7 @@ import Oleg from "./Images/Oleg.jpg";
 import Vitalik from "./Images/Vitalik.jpg";
 import ZharkevichIlya from "./Images/ZharkevichIlya.jpg";
 import ZybrickiyMaksim from "./Images/ZybrickiyMaksim.jpg";
+import Artem from "./Images/Artem.jpg";
 
 const mockImages = {
   AgafonovaElena,
@@ -22,6 +23,7 @@ const mockImages = {
   Vitalik,
   ZharkevichIlya,
   ZybrickiyMaksim,
+  Artem,
 };
 
 export default mockImages;

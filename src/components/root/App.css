@@ -1,6 +1,11 @@
+/* font-family: 'Caveat', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif; */
+
 .App_wrapper {
     margin: 20px;
     border: 2px solid purple;
+    background-color: khaki;
 }
 
 .App_all-news {
@@ -9,9 +14,10 @@
 }
 
 .App_title {
+    font-family: 'Pacifico', cursive;
     text-align: center;
     margin: 20px;
-    font-size: min(30px, calc(2vw + 10px));
+    font-size: min(50px, calc(3vw + 10px));
 }
 
 .App_news-block {
@@ -33,4 +39,5 @@
 
 .App_news__title {
     font-size: min(25px, calc(2vw + 7px));
+    font-family: 'Roboto', sans-serif;
 }
