@@ -1,16 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export const useOrientation = () => {
+  const [orientation, setOrientation] = useState(null)
+
   useEffect(() => {
     window.addEventListener('resize', () => {
-    //   screen.orientation
-    // eslint-disable-next-line no-restricted-globals
-      console.log('resize', screen?.orientation?.type)
-    })
-    return ( 
-      () => {
-        console.log('componentWillUnmount')
-      }
-    )
-  })
+      // eslint-disable-next-line no-restricted-globals
+      const orientation = screen?.orientation?.type?.includes('portrait')
+        ? 'portrait'
+        : 'landscape';
+
+      setOrientation(orientation);
+    });
+  });
+
+  return orientation;
 }

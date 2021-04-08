@@ -12,7 +12,7 @@ function App() {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [modalData, setModalData] = React.useState({});
 
-  useOrientation();
+  console.log(useOrientation());
 
   getNews().then(setResults);
 
