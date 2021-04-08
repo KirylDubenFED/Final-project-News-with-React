@@ -17,7 +17,7 @@ function App() {
     setModalData(modalData);
     setIsOpen(true);
   };
-console.log(openNewsModal)
+
   const closeNewsModal = () => {
     setModalData({});
     setIsOpen(false);
