@@ -5,11 +5,14 @@ import Modal from "react-modal";
 import News from "../News/News";
 import NewsFooter from "../News/Footer/NewsFooter";
 import Button from "../Button/Button";
+import { useOrientation } from "../../common/hooks/useOrientation";
 
 function App() {
   const [results, setResults] = React.useState([]);
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const [modalData, setModalData] = React.useState({});
+
+  useOrientation();
 
   getNews().then(setResults);
 
