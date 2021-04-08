@@ -12,7 +12,16 @@ export const useOrientation = () => {
 
       setOrientation(orientation);
     });
+
+    return (
+        () => {
+            console.log('componentWillUnmount');
+        }
+    )
   });
 
   return orientation;
 }
+
+// Отписаться от ивента
+// Почитать про редах экшены, все все все 
