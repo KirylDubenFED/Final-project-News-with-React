@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 export const useOrientation = () => {
   const [orientation, setOrientation] = useState(null)
