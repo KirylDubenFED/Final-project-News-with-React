@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
+console.log.apply(useMemo)
 export const useOrientation = () => {
   const [orientation, setOrientation] = useState(null)
 
